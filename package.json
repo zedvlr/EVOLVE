@@ -1,0 +1,31 @@
+{
+  "name": "evolve",
+  "version": "0.1.1",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "deploy": "node src/deploy.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discord-bot",
+    "bot-discord",
+    "valorant",
+    "valo",
+    "val",
+    "valorant-bot",
+    "valorant-discord-bot",
+    "discord-valorant-bot"
+  ],
+  "author": "zed",
+  "license": "MIT",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.11.0"
+  }
+}
