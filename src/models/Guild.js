@@ -40,7 +40,19 @@ const guildSchema = new Schema({
         type: String,
         required: false,
         default: null
-    }
+    },
+    tickets: [{
+        user: {
+            type: String,
+            required: true,
+            default: null
+        },
+        channel: {
+            type: String,
+            required: true,
+            default: null
+        }
+    }]
 });
 
 const Guild = model('Guild', guildSchema);
