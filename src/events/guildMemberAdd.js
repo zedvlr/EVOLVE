@@ -11,7 +11,7 @@ module.exports = {
         
         const guildData = await Guild.findOne({ id: member.guild.id });
 
-        if (guildData.welcomeChannel && member.guild.channels.cache.has(guildData.welcomeChannel) && guildData.welcomeMessage) {
+        if (guildData && guildData.welcomeChannel && member.guild.channels.cache.has(guildData.welcomeChannel) && guildData.welcomeMessage) {
             const channel = member.guild.channels.cache.get(guildData.welcomeChannel);
 
             let message = guildData.welcomeMessage;
